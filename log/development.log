@@ -328,3 +328,12 @@ Redirected to http://174.138.35.103:59191/posts/9
 Completed 302 Found in 5ms (ActiveRecord: 2.6ms)
 
 
+Started GET "/posts/9" for 69.254.174.182 at 2019-08-06 18:36:54 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.2ms)
+
+
