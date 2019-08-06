@@ -274,3 +274,11 @@ Redirected to http://174.138.35.103:59191/posts
 Completed 302 Found in 5ms (ActiveRecord: 3.1ms)
 
 
+Started GET "/posts" for 69.254.174.182 at 2019-08-06 18:31:54 +0000
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
