@@ -264,3 +264,13 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 17ms (Views: 10.4ms | ActiveRecord: 0.8ms)
 
 
+Started POST "/posts" for 69.254.174.182 at 2019-08-06 18:31:54 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lIc6C586GPYdLPekQeWlOR5sY6ZuBQz7PQLR7WD1o3CLB9hcFKlpPguUWA/NZxZtzHNPKAkrFuvvbWfbby0P+Q==", "title"=>"New title", "description"=>"jjhj", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "New title"], ["description", "jjhj"], ["created_at", "2019-08-06 18:31:54.277243"], ["updated_at", "2019-08-06 18:31:54.277243"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://174.138.35.103:59191/posts
+Completed 302 Found in 5ms (ActiveRecord: 3.1ms)
+
+
