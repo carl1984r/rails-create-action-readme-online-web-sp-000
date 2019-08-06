@@ -289,3 +289,17 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 19ms (Views: 11.9ms | ActiveRecord: 1.2ms)
 
 
+Started POST "/posts" for 69.254.174.182 at 2019-08-06 18:35:16 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iQz9SDK2GHSOrm6PCcEjONO6Y4blruvtVyjriIG+HLWWjB8fuSVpvJgWwSSFQ5BsAaVPCIKA8f2FR12+jmawPA==", "title"=>"New title ", "description"=>"2nd post description", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "New title "], ["description", "2nd post description"], ["created_at", "2019-08-06 18:35:16.120513"], ["updated_at", "2019-08-06 18:35:16.120513"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.0ms)
+
+
+  
+NoMethodError (undefined method `post_path' for #<PostsController:0x00007f51544a0888>
+Did you mean?  posts_path):
+  
+app/controllers/posts_controller.rb:19:in `create'
